@@ -1,0 +1,31 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-viteproject-dev-1ab38-authRole",
+      "UnauthRoleArn": "arn:aws:iam::463470968965:role/amplify-viteproject-dev-1ab38-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::463470968965:role/amplify-viteproject-dev-1ab38-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-viteproject-dev-1ab38-deployment",
+      "UnauthRoleName": "amplify-viteproject-dev-1ab38-unauthRole",
+      "StackName": "amplify-viteproject-dev-1ab38",
+      "StackId": "arn:aws:cloudformation:us-east-2:463470968965:stack/amplify-viteproject-dev-1ab38/83992120-5d12-11ef-98d7-0667fc12f4f7",
+      "AmplifyAppId": "d2dewcmntioz61"
+    },
+    "categories": {
+      "auth": {
+        "viteproject641bde02": {
+          "userPoolId": "us-east-2_0PUuotLzi",
+          "userPoolName": "file_upload_user_pool",
+          "webClientId": "2igtqlajhn5lmt47q3n93imvch",
+          "nativeClientId": "2igtqlajhn5lmt47q3n93imvch"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2dewcmntioz61",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
