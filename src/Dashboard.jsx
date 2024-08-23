@@ -89,6 +89,7 @@ export default function Dashboard() {
         },
       });
     } catch (e) {
+      console.error({ e });
       toast.update(toastIdRef.current, {
         title: 'Error joining chunks',
         status: 'error',
@@ -163,6 +164,7 @@ export default function Dashboard() {
     try {
       responses = await Promise.all(fetchs);
     } catch (e) {
+      console.error({ e });
       setError(true);
       setState('initial');
       toast({

@@ -12,7 +12,7 @@ export default function useJwtToken() {
         try {
             const session = await fetchAuthSession(); // Fetch the authentication session
             // console.log('Access Token:', session.tokens.accessToken.toString());
-            console.log('ID Token:', session.tokens.idToken.toString());
+            // console.log('ID Token:', session.tokens.idToken.toString());
             setAccessToken(session.tokens.idToken.toString());
             setLoading(false);
         } catch (e) {
