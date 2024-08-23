@@ -1,8 +1,27 @@
-# React + Vite
+# Running this App in AWS Amplify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Prerequisites
+Install the infrastructure using terraform. The terraform script will create the AWS User Pools and Identity Pools required for the app to run.
+[Github Repository](https://github.com/yoandresaav/amplify-terraform-backend)
 
-Currently, two official plugins are available:
+1. Install Amplify CLI
+[Amplify CLI](https://docs.amplify.aws/gen1/javascript/tools/cli/start/set-up-cli/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Initialize Amplify
+```bash
+amplify init
+```
+3. Add Auth from AWS User Pools created with terraform
+```bash
+amplify import auth
+```
+4. Add Hosting
+```bash
+amplify add hosting
+```
+5. Publish
+```bash
+amplify publish
+```
+
+
