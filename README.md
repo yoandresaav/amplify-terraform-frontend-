@@ -15,14 +15,24 @@ Find `VITE_BACKEND_URL` and add the URL of the API Gateway created with terrafor
 ```bash
 amplify init
 ```
+Mind that the Amplify default project `build` folder in vite should be `dist`. 
+[Youtube Video](https://youtu.be/8sgivEVsjFE?t=1198) 
+Instead of accepting the default configuration, choose `n` and set the build folder to `dist`.
+
 4. Add Auth from AWS User Pools created with terraform
 ```bash
 amplify import auth
 ```
+Select the `User Pool only` created with terraform.
+[YouTube Video](https://youtu.be/8sgivEVsjFE?t=1300)
+
 5. Add Hosting
 ```bash
 amplify add hosting
 ```
+
+Select Amazon S3 and Amazon CloudFront
+
 6. Publish
 ```bash
 amplify publish
